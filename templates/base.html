@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+
+
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <h1>
+                        Travelo
+                    </h1>
+                </a>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <a href="/">
+                        <li class="active">Home</li>
+                    </a>
+                    <a href="/aboutus">
+                        <li>About</li>
+                    </a>
+                    <a href="/imagegallery">
+                        <li>Images</li>
+                    </a>
+                    <a href="/blog">
+                        <li>Blog</li>
+                    </a>
+                    <a href="/contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="humberger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobile-menu" id="mobile-menubar">
+               
+                <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/aboutus">
+                        <li>About</li>
+                    </a>
+                    <a href="/imagegallery">
+                        <li>Images</li>
+                    </a>
+                    <a href="/blog">
+                        <li>Blog</li>
+                    </a>
+                    <a href="/contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <a href="/login" class="btn">Login</a>
+            </div>
+            <div class="btn-group">
+                <a href="/login" class="btn">Login</a>
+                <a href="/signup" class="btn">Signup</a>
+            </div>
+           
+           
+        </nav>
+    </div>
+    
+    {% block content %}
+
+
+    {% endblock %}
+
+
+    <section class="footer">
+        <footer>
+            <div class="footer-left">
+                <div class="logo">
+                    <a href="/index">
+                        <h1>
+                            Travelo
+                        </h1>
+                    </a>
+                    <div>
+                        <h3>Call us</h3>
+                        <p><i class="fa-solid fa-envelope"></i>example@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8898773326</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                    <ul>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>About</li></a>
+                        <a href=""><li>Listing</li></a>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Contact</li></a>
+                    </ul>
+            </div>
+           
+            <div class="footer-right">
+                <h3>Social Media Links</h3>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <ul style="display: flex; justify-content: center; list-style: none; " >
+                <a href=""><li>Term and Conditions</li></a>
+                <a href=""><li>Privacy polices</li></a>
+                <a href=""><li>Desclaimer</li></a>
+            </ul>
+            <p>	&#169; All copyright reserved by <a href="">Jit Information</a></p>
+        </div>
+    </section>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+    single_blog 
+{% endblock %}
+
+{% block content %}
+
+<style>
+        .navbar{
+            background-color: #000;
+            position: sticky;
+            border-bottom: 1px solid black;
+            box-shadow: 10px 0px 5px #fff;
+            top: 0;
+        }
+        .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../static/images/bg2.jpg);
+        }
+        .content{
+            margin-bottom: 30px;
+            align-items: start;
+        }
+    
+
+
+        /* .leftbox .blogCard img{
+            width: 100%;
+            height: 40%;
+            border-radius: 10px;
+            padding: 2px;
+            object-fit: cover;
+        } */
+       
+        
+       
+    </style>
+
+    <section class="contact">
+        <div class="banner">
+            <h2>Blog</h2>
+        </div>
+        <div class="content">
+    
+            <div class="leftbox">
+                <div class="blog-title"><h4 style="font-size: 24px; padding-bottom: 10px;">This is my first blogpost</h2></div>
+                <div>
+                    <img src="../static/images/image1.jpg" alt="" width="100%" height="300px">
+                    <p>Bhubanswar emerged with century old name as Temple city is the capital city of Indian state Odisha. Currently the city has flourished with a new name and that is Smart City of Odisha. It is also named as Ekamra Kshetra due to its religious establishments.</p>
+                    <h4>About Bhubaneswar</h4>
+                    <p>The Temple city got its name due to hub of 7000 temples once upon a time. The state capital of Odisha is a sprawling metropolis that very ably preserves the balance between upholding olden values and cultural heritage on one hand and being able to conform to changing modern times on the other. Literally the city's name is based on the Lord Shiva, who is also named as Tribhubaneswara, <i>“Lord of the three worlds”</i> .
+                    <br>
+                    On the year 1948 the foundation ofthe modern Bhubaneswar city waslaid. The city is designed byfamous German architect Mr. OttoKonigsberger. As a smart city,Bhubaneswar is providing allmodern facilities for your tour.It is the hub of Night Bars, Pops,Disco, Luxury Hotels, RockingMusic and many more that willsatisfy you needs. Bhubaneswarbeing the center for religioustourism has a number of majestictemples built centuries ago whichhave still retained their originalover all these years.</p>
+                    <h4>Top Attractions in Bhubaneswar</h4>
+                    <h5>Lingaraj Temple</h5>
+                    <div>
+                        <img src="https://www.orissatourism.org/helpers/images/Lingaraj_temple_Bhubaneswar.jpg" alt="">
+                        <p>Lingaraj Temple is one of the oldest and largest Hindu temples in Bhubaneswar. The temple is the most prominent landmark of the Bhubaneswar city and also one of the top places to visit in Bhubaneswar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <div class="title-box"><h3>Category</h3></div>
+                <div>
+                    <ul>
+                        <li>Blog topic 1</li>
+                        <li>Blog topic 1</li>
+                        <li>Blog topic 1</li>
+                        <li>Blog topic 1</li>
+                        <li>Blog topic 1</li>
+                        <li>Blog topic 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

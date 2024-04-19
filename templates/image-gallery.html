@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+    Images
+{% endblock %}
+
+{% block content %}
+    <style>
+        .navbar{
+            background-color: #000;
+            position: sticky;
+            border-bottom: 1px solid black;
+            box-shadow: 10px 0px 5px #ffffff;
+            top: 0;
+        }
+        .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../static/images/bg2.jpg);
+        }
+        .image-box{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .col{
+            width: 32.5%;
+            
+        }  
+        .col img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            /* padding-bottom: 10px; */
+            /* box-shadow: 0 0 5px 1px #000; */
+
+        }
+        @media screen and (max-width: 900px) {
+            .image-box{
+            width: 90%;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .image-box .col{
+            width: 48%;   
+        }
+        } 
+        @media screen and (max-width: 767px) {
+            .image-box{
+            width: 90%;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+            .image-box .col{
+            width: 100%;   
+        }
+        } 
+
+        
+    </style>
+
+    <section class="contact">
+        <div class="banner">
+            <h2>Images</h2>
+        </div>
+        <div class="image-box">
+            <div class="col">
+                <img src="https://source.unsplash.com/ciYOQZ7eKQ4" alt="">
+                <img src="../static/images/image19.jpeg" alt="">
+                <img src="../static/images/image2.jpeg" alt="">
+                <img src="../static/images/image3.jpeg" alt="">
+                <img src="../static/images/image4.jpeg" alt="">
+                <img src="../static/images/image5.jpeg" alt="">
+                <img src="https://source.unsplash.com/200x2 00/?nature,water" alt="">
+            </div>
+            <div class="col">
+                <img src="../static/images/image10.jpeg" alt="">
+                <img src="../static/images/image12.jpeg" alt="">
+                <img src="../static/images/image13.jpeg" alt="">
+                <img src="../static/images/image14.jpeg" alt="">
+                <img src="../static/images/image15.jpeg" alt="">
+                <img src="../static/images/image16.jpeg" alt="">
+                <img src="../static/images/image20.webp" alt="">
+                <img src="https://source.unsplash.com/400x500/?nature,city" alt="">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/400x500/?nature,water" alt="">
+                <img src="../static/images/image6.jpeg" alt="">
+                <img src="../static/images/image8.jpeg" alt="">
+                <img src="../static/images/image9.jpeg" alt="">
+                <img src="../static/images/image10.jpeg" alt="">
+                <img src="../static/images/image17.jpeg" alt="">
+                <img src="../static/images/image18.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+{% endblock %}
